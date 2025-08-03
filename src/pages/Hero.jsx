@@ -219,7 +219,7 @@ function Hero() {
                             title: "Book",
                             subtitle: "A Ticket",
                             bg: "blue-600",
-                            text: "white",
+                            text: "black",
                             description: "Traveling is A Wonderful Way To Explore New Places, Learn About Different Cultures, And Gain Unique Experiences.",
                             button: true
                         },
@@ -232,8 +232,8 @@ function Hero() {
                             <div className={`absolute -top-6 sm:-top-8 bg-white p-3 sm:p-4 rounded-full shadow-lg`}>
                                 <item.icon className={`text-2xl sm:text-3xl ${item.bg === 'blue-600' ? 'text-blue-600' : 'text-blue-600'}`} />
                             </div>
-                            <h2 className="text-xl sm:text-2xl font-bold mb-2 mt-6 sm:mt-8">{item.title}</h2>
-                            <h3 className={`text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 ${item.bg === 'blue-600' ? '' : 'text-blue-600'}`}>
+                            <h2 className="text-black text-xl sm:text-2xl font-bold mb-2 mt-6 sm:mt-8">{item.title}</h2>
+                            <h3 className={` text-blue-600 text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 ${item.bg === 'blue-600' ? '' : 'text-blue-600'}`}>
                                 {item.subtitle}
                             </h3>
                             {item.description && (
@@ -242,7 +242,7 @@ function Hero() {
                                 </p>
                             )}
                             {item.button && (
-                                <button className="bg-white text-blue-600 px-4 sm:px-6 py-1 sm:py-2 rounded-full font-medium hover:bg-gray-100 transition cursor-pointer text-sm sm:text-base">
+                                <button className="border-blue-600 border-1 bg-white text-blue-600 px-4 sm:px-6 py-1 sm:py-2 rounded-full font-medium hover:bg-gray-100 transition cursor-pointer text-sm sm:text-base">
                                     LEARN MORE
                                 </button>
                             )}
